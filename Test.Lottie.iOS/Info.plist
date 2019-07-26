@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>Lottie.iOS.Test</string>
+	<string>Test.Lottie.iOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.letrungdo.Lottie-iOS-Test</string>
+	<string>com.letrungdo.Test-Lottie-iOS</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

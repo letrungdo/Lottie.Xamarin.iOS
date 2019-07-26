@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace Lottie.iOS.Test
+namespace Test.Lottie.iOS
 {
     public class Application
     {

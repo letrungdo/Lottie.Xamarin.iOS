@@ -1,7 +1,9 @@
 ﻿using System;
+using Foundation;
+using Lottie.iOS;
 using UIKit;
 
-namespace Lottie.iOS.Test
+namespace Test.Lottie.iOS
 {
     public partial class ViewController : UIViewController
     {
@@ -15,6 +17,14 @@ namespace Lottie.iOS.Test
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
 
+            // Perform any additional setup after loading the view, typically from a nib.
+            CompatibleAnimation compatibleAnimation = new CompatibleAnimation("splash", NSBundle.MainBundle);
+            CompatibleAnimationView animationView = new CompatibleAnimationView(new CoreGraphics.CGRect(0, 0, 200, 200))
+            {
+                CompatibleAnimation = compatibleAnimation
+            };
+
+            this.View.AddSubview(animationView);
         }
 
         public override void DidReceiveMemoryWarning()

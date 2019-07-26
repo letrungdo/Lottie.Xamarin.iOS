@@ -5,7 +5,7 @@
 //
 using Foundation;
 
-namespace Lottie.iOS.Test
+namespace Test.Lottie.iOS
 {
     [Register("ViewController")]
     partial class ViewController

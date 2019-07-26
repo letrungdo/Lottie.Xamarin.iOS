@@ -20,7 +20,7 @@ namespace Lottie.iOS
     }
 
     // @interface AnimatedControl : UIControl
-    [BaseType(typeof(UIControl))]
+    [BaseType(typeof(UIControl), Name = "_TtC6Lottie15AnimatedControl")]
     interface AnimatedControl
     {
         // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
@@ -62,7 +62,7 @@ namespace Lottie.iOS
     }
 
     // @interface AnimatedButton : AnimatedControl
-    [BaseType(typeof(AnimatedControl))]
+    [BaseType(typeof(AnimatedControl), Name = "_TtC6Lottie14AnimatedButton")]
     interface AnimatedButton
     {
         // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
@@ -80,7 +80,7 @@ namespace Lottie.iOS
     }
 
     // @interface AnimatedSwitch : AnimatedControl
-    [BaseType(typeof(AnimatedControl))]
+    [BaseType(typeof(AnimatedControl), Name = "_TtC6Lottie14AnimatedSwitch")]
     interface AnimatedSwitch
     {
         // -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
@@ -94,7 +94,7 @@ namespace Lottie.iOS
     }
 
     // @interface AnimationSubview : UIView
-    [BaseType(typeof(UIView))]
+    [BaseType(typeof(UIView), Name = "_TtC6Lottie16AnimationSubview")]
     interface AnimationSubview
     {
         // -(instancetype _Nonnull)initWithFrame:(CGRect)frame __attribute__((objc_designated_initializer));
@@ -109,7 +109,7 @@ namespace Lottie.iOS
     }
 
     // @interface LottieView : UIView
-    [BaseType(typeof(UIView))]
+    [BaseType(typeof(UIView), Name = "_TtC6Lottie10LottieView")]
     interface LottieView
     {
         // -(void)didMoveToWindow;
@@ -136,7 +136,7 @@ namespace Lottie.iOS
     }
 
     // @interface AnimationView : LottieView
-    [BaseType(typeof(LottieView))]
+    [BaseType(typeof(LottieView), Name = "_TtC6Lottie13AnimationView")]
     interface AnimationView
     {
         // -(instancetype _Nonnull)initWithFrame:(CGRect)frame __attribute__((objc_designated_initializer));
@@ -155,7 +155,7 @@ namespace Lottie.iOS
     }
 
     // @interface CompatibleAnimation : NSObject
-    [BaseType(typeof(NSObject))]
+    [BaseType(typeof(NSObject), Name = "_TtC6Lottie19CompatibleAnimation")]
     [DisableDefaultCtor]
     interface CompatibleAnimation
     {
@@ -171,7 +171,7 @@ namespace Lottie.iOS
     }
 
     // @interface CompatibleAnimationKeypath : NSObject
-    [BaseType(typeof(NSObject))]
+    [BaseType(typeof(NSObject), Name = "_TtC6Lottie26CompatibleAnimationKeypath")]
     [DisableDefaultCtor]
     interface CompatibleAnimationKeypath
     {
@@ -192,7 +192,7 @@ namespace Lottie.iOS
     }
 
     // @interface CompatibleAnimationView : UIView
-    [BaseType(typeof(UIView))]
+    [BaseType(typeof(UIView), Name = "_TtC6Lottie23CompatibleAnimationView")]
     interface CompatibleAnimationView
     {
         // -(instancetype _Nonnull)initWithFrame:(CGRect)frame __attribute__((objc_designated_initializer));
