@@ -1,7 +1,6 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
-
 using Foundation;
+using ObjCRuntime;
 
 // This attribute allows you to mark your assemblies as “safe to link”. 
 // When the attribute is present, the linker—if enabled—will process the assembly 
@@ -32,3 +31,10 @@ using Foundation;
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
+
+[assembly: LinkWith("Lottie.framework",
+   LinkTarget.Arm64 | LinkTarget.ArmV7 | LinkTarget.ArmV7s | LinkTarget.Simulator | LinkTarget.Simulator64,
+   SmartLink = true,
+   ForceLoad = true,
+   LinkerFlags = "-lxml2 -ObjC",
+   Frameworks = "CoreFoundation CoreGraphics CoreImage Foundation Metal QuartzCore UIKit")]
