@@ -17,14 +17,13 @@ namespace Test.Lottie.iOS
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
-            var cAnimation = new CompatibleAnimation("splash", NSBundle.MainBundle);
+            var cAnimation = new CompatibleAnimation("like_and_follow", NSBundle.MainBundle);
 
             var animView = new CompatibleAnimationView()
             {
                 CompatibleAnimation = cAnimation,
             };
             animView.LoopAnimationCount = -1; // Allow loop
-            animView.Frame = new CoreGraphics.CGRect(View.Frame.Width / 2, View.Frame.Height / 2, 200, 200);
             animView.Center = View.ConvertPointFromView(View.Center, animView);
 
             animView.TranslatesAutoresizingMaskIntoConstraints = false;
