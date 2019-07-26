@@ -1,9 +1,8 @@
 ﻿using System;
-using UIKit;
+using CoreGraphics;
 using Foundation;
 using ObjCRuntime;
-using CoreGraphics;
-using Lottie;
+using UIKit;
 
 namespace Lottie.iOS
 {
@@ -163,11 +162,6 @@ namespace Lottie.iOS
         [Export("initWithName:bundle:")]
         [DesignatedInitializer]
         IntPtr Constructor(string name, NSBundle bundle);
-
-        // +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
-        [Static]
-        [Export("new")]
-        CompatibleAnimation New();
     }
 
     // @interface CompatibleAnimationKeypath : NSObject
@@ -184,11 +178,6 @@ namespace Lottie.iOS
         [Export("initWithKeys:")]
         [DesignatedInitializer]
         IntPtr Constructor(string[] keys);
-
-        // +(instancetype _Nonnull)new __attribute__((deprecated("-init is unavailable")));
-        [Static]
-        [Export("new")]
-        CompatibleAnimationKeypath New();
     }
 
     // @interface CompatibleAnimationView : UIView
@@ -309,5 +298,4 @@ namespace Lottie.iOS
         [Export("frameTimeForMarker:")]
         nfloat FrameTimeForMarker(string named);
     }
-
 }
