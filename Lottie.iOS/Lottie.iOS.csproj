@@ -41,24 +41,35 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="Lottie.framework">
-      <Kind>Framework</Kind>
-      <Frameworks></Frameworks>
-      <LinkerFlags></LinkerFlags>
-      <SmartLink>False</SmartLink>
-    </NativeReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Lottie.framework\.DS_Store" />
     <BundleResource Include="Lottie.framework\Lottie" />
     <BundleResource Include="Lottie.framework\Info.plist" />
     <BundleResource Include="Lottie.framework\Headers\Lottie-Swift.h" />
     <BundleResource Include="Lottie.framework\Headers\lottie-ios-umbrella.h" />
     <BundleResource Include="Lottie.framework\Modules\module.modulemap" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm64-apple-ios.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\i386.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\x86_64-apple-ios-simulator.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\x86_64-apple-ios-simulator.swiftmodule" />
     <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\x86_64.swiftdoc" />
     <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm64.swiftmodule" />
     <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\x86_64.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\armv7-apple-ios.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\i386-apple-ios-simulator.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\i386.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm64-apple-ios.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm.swiftmodule" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\armv7.swiftdoc" />
     <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\arm64.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\armv7-apple-ios.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\i386-apple-ios-simulator.swiftdoc" />
+    <BundleResource Include="Lottie.framework\Modules\Lottie.swiftmodule\armv7.swiftmodule" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Lottie.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>

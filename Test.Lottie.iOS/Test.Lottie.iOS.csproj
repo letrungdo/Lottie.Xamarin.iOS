@@ -100,6 +100,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -119,4 +120,5 @@
     <BundleResource Include="like_and_follow.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Swift.1.0.4\build\xamarinios\Xamarin.Swift.targets" Condition="Exists('..\packages\Xamarin.Swift.1.0.4\build\xamarinios\Xamarin.Swift.targets')" />
 </Project>
